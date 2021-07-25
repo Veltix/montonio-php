@@ -1,10 +1,10 @@
 <?php
 
-namespace Montonio\MontonioFinancing;
+namespace Montonio\Financing;
 
-use Montonio\MontonioFinancing\MontonioFinancingSDK;
+use Montonio\Financing\FinancingSDK;
 
-class MontonioSliceSDK extends MontonioFinancingSDK
+class SliceSDK extends FinancingSDK
 {
     /**
      * Override: Loan type in the Montonio system

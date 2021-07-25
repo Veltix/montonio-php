@@ -1,6 +1,6 @@
 <?php
 
-namespace Montonio\MontonioPayments;
+namespace Montonio\Payments;
 
 /**
  * Usage example:
@@ -29,7 +29,7 @@ namespace Montonio\MontonioPayments;
  * It has methods to configure and display banks and card processors at checkout
  */
 
-class MontonioPaymentsCheckout
+class PaymentCheckout
 {
     /**
      * The payment handle style identifier which controls how to show the banks

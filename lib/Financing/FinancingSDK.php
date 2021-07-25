@@ -1,6 +1,6 @@
 <?php
 
-namespace Montonio\MontonioFinancing;
+namespace Montonio\Financing;
 
 /**
  * We use php-jwt for JWT creation
@@ -14,7 +14,7 @@ use Firebase\JWT\JWT;
  * @version 2.0.0
  * @author Montonio Finance OÜ <developers@montonio.com>
  */
-class MontonioFinancingSDK
+class FinancingSDK
 {
     /**
      * Payment Data for Montonio payment_token generation

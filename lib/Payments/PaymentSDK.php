@@ -1,6 +1,6 @@
 <?php
 
-namespace Montonio\MontonioPayments;
+namespace Montonio\Payments;
 
 /**
  * We use php-jwt for JWT creation
@@ -13,7 +13,7 @@ use Firebase\JWT\JWT;
  * This class contains methods for starting and validating payments.
  */
 
-class MontonioPaymentsSDK
+class PaymentSDK
 {
     
     /**
