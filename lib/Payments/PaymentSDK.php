@@ -126,7 +126,7 @@ class PaymentSDK
         $exp                = time() + (10 * 60);
         $paymentData['exp'] = $exp;
 
-        return Firebase\JWT\JWT::encode($paymentData, $this->_secretKey);
+        return \Firebase\JWT\JWT::encode($paymentData, $this->_secretKey);
     }
 
     /**
@@ -152,8 +152,8 @@ class PaymentSDK
      */
     public static function decodePaymentToken($token, $secretKey)
     {
-        Firebase\JWT\JWT::$leeway = 60 * 5; // 5 minutes
-        return Firebase\JWT\JWT::decode($token, $secretKey, array('HS256'));
+        \Firebase\JWT\JWT::$leeway = 60 * 5; // 5 minutes
+        return \Firebase\JWT\JWT::decode($token, $secretKey, array('HS256'));
     }
 
     /**
@@ -169,7 +169,7 @@ class PaymentSDK
             'access_key' => $accessKey,
         );
 
-        return Firebase\JWT\JWT::encode($data, $secretKey);
+        return \Firebase\JWT\JWT::encode($data, $secretKey);
     }
 
     /**
